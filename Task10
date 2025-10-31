@@ -1,0 +1,109 @@
+Task 10.Use Matplotlib module for plotting in python
+
+Aim:  
+To use Matplotlib module for plotting in python.
+
+Problem 10.1. Write a Python programming to display a bar chart of the popularity of programming Languages.
+Sample data:
+Programming languages: Java, Python, PHP, JavaScript, C#, C++
+Popularity: 22.2, 17.6, 8.8, 8, 7.7, 6.7
+Sample Output:
+ 
+
+
+Algorithm:
+1.	Define two lists for programming languages and their popularity respectively
+2.	Find the maximum popularity value in the list
+3.	Define a scaling factor to scale the bar heights within a certain limit (e.g. 50 characters)
+4.	For each language and popularity pair, calculate the bar height as the popularity value scaled by the scaling factor
+5.	Print the chart using a loop to iterate over the programming language list: a. Print the language name and a separator character (e.g. "|") b. Use a loop to print the bar chart by printing the bar character (e.g. "*") a number of times equal to the bar height c. Print the popularity value with a separator character d. Print a newline character
+
+
+
+
+
+
+
+
+Program:
+#pip install matplotlib
+import matplotlib.pyplot as plt
+
+languages = ['Java', 'Python', 'PHP', 'JavaScript', 'C#', 'C++']
+popularity = [22.2, 17.6, 8.8, 8, 7.7, 6.7]
+
+plt.bar(languages, popularity, color='b')
+plt.title('Popularity of Programming Languages')
+plt.xlabel('Programming Languages')
+plt.ylabel('Popularity')
+plt.show()
+
+
+Output:
+
+ 
+
+
+
+
+
+
+
+
+Problem 10.2.Write a Python programming to create a pie chart of the popularity of programming Languages.
+Sample data:
+Programming languages: Java, Python, PHP, JavaScript, C#, C++
+Popularity: 22.2, 17.6, 8.8, 8, 7.7, 6.7
+Sample Output:
+ 
+Algorithm:
+1.	Create a list of Programming Languages and Popularity
+2.	Create a pie chart using the matplotlib library
+3.	Set the title and legend for the pie chart
+4.	Show the pie chart
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program:
+import matplotlib.pyplot as plt
+
+# Step 1
+languages = ['Java', 'Python', 'PHP', 'JavaScript', 'C#', 'C++']
+popularity = [22.2, 17.6, 8.8, 8, 7.7, 6.7]
+
+# Step 2
+plt.pie(popularity, labels=languages, autopct='%1.1f%%')
+
+# Step 3
+plt.title('Popularity of Programming Languages')
+plt.legend(languages, loc="best")
+
+# Step 4
+plt.show()
+
+
+Output:
+
+ 
+
+
+
+Result: Thus the python program use Matplotlib module for plotting is executed and verified successful.
+
