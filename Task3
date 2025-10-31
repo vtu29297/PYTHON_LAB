@@ -1,0 +1,97 @@
+Task 3: Importing Python modules and packages in python programming
+Aim: 
+To write python demonstrating importing Python modules and packages
+a.	You are tasked with developing a modular calculator application in Python. The calculator should support basic arithmetic operations: addition, subtraction, multiplication, and division. Each operation should be implemented in a separate module. Additionally, you should create a main program to handle user input, call the appropriate module, and display the results.
+Algorithm:
+1.	Define functions for addition, subtraction, multiplication, and division.
+2.	Handle division by zero by raising an error if the divisor is zero.
+3.	Import the module (mymath) containing these functions.
+4.	Initialize two numbers (a = 10, b = 5).
+5.	Call each function using mymath.<function_name>(a, b).
+6.	Print the results of all operations.
+
+Program:
+def add(a, b):
+    return a + b
+def subtract(a, b):
+    return a - b
+def multiply(a, b):
+    return a * b
+def divide(a, b):
+    if b == 0:
+        raise ValueError("Cannot divide by zero")
+    return a / b
+
+import mymath
+
+a = 10
+b = 5
+print("Addition:", mymath.add(a, b))
+print("Subtraction:", mymath.subtract(a, b))
+print("Multiplication:", mymath.multiply(a, b))
+print("Division:", mymath.divide(a, b))
+
+Output:
+ 
+
+b.	You are working on a Python project that requires you to perform various mathematical operations and geometric area calculations. To organize your code better, you decide to create a package named mypackage which includes sub packages pack1 and pack 2 with two modules: mathfunctions and areafunctions Demonstrate the use of the functions by performing a few calculations and printing the results.
+Algorithm:
+1.	Create mathfunctions.py module:
+2.	Create areafunctions.py module:
+3.	Create __init__.py files in pack1 and pack2:
+4.	Create main.py:
+5.	Print the output as expected.
+
+Program:
+1.	Create the mathfunctions.py module
+def add(a, b):
+    return a + b
+def subtract(a, b):
+    return a - b
+def multiply(a, b):
+    return a * b
+def divide(a, b):
+    if b == 0:
+        return "Error! Division by zero."
+    return a / b
+
+2.	Create the areafunctions.py module 
+import math
+def circle_area(radius):
+    return math.pi * radius * radius
+def rectangle_area(length, width):
+    return length * width
+def triangle_area(base, height):
+    return 0.5 * base * height
+
+3.	Create __init__.py in each package folder (pack1 and pack2)
+from .mathfunctions import add, subtract, multiply, divide
+from .areafunctions import circle_area, rectangle_area, triangle_area
+4.	Create the main.py file
+from pack import mathfunctions
+from pack import areafunctions 
+# Using math functions
+print("Addition:", mathfunctions.add(10, 5)) 
+print("Subtraction:", mathfunctions.subtract(10, 5))
+print("Multiplication:", mathfunctions.multiply(10, 5))
+print("Division:", mathfunctions.divide(10, 5))
+# Using area functions
+print("Circle Area (radius=7):", areafunctions.circle_area(7))
+print("Rectangle Area (5x10):", areafunctions.rectangle_area(5, 10))
+print("Triangle Area (base=6, height=8):", areafunctions.triangle_area(6, 8))
+
+
+
+Output:
+
+ 
+
+
+
+
+
+
+
+
+Result:
+Thus, the program for Importing Python modules and packages was successfully executed and the output was verified.
