@@ -1,0 +1,86 @@
+Task 1: Running Python Script and various expressions in an interactive interpreter
+
+Aim:
+ 		To run python Script and various expressions in an interactive interpreter 
+
+a.	Create a python program to enter two numbers and then performs and displays the results of the following operations: addition, subtraction, multiplication, and division.
+
+Algorithm:
+1.Start.
+2.Get the two numbers and store it in variable x and y.
+3.For Addition do ; x+y and print it.
+4.For Subtraction do ; x-y and print it.
+5.For Multiplication do ; x*y and print it.
+6.For Division do; x/y and print it.
+7.Stop
+
+Program:
+x =int(input("Enter the First number:"))
+y =int(input("Enter the Second number:"))
+  
+add = x + y 
+sub = x - y 
+pro = x * y 
+div = x / y 
+  
+print("Addition:",add) 
+print("Subtraction :",sub) 
+print("Multiplication:",pro) 
+print("Division:",div)
+
+b.	Create a python program to enter two numbers and then performs and displays the results of the following relational expression : >, <, ==, !=, >=, <=
+
+Algorithm:
+1.Start
+2.Get the the input from the user and store it in a,b&c.
+3.Perform the relational operations( i.e, >,<.=,==,!=,>=,<=).
+4.Print the results.
+5.Stop.
+
+Program:
+
+# Initializing the value of a, b, and c
+a = int(input("Enter the First number: "))
+b = int(input("Enter the Second number: "))
+c = int(input("Enter the Third number: "))
+
+# Using relational operators
+print(a, ">", b, "is", a > b)
+print(a, "<", b, "is", a < b)
+print(c, "==", a, "is", c == a)
+print(c, "!=", b, "is", c != b)
+print(a, ">=", b, "is", a >= b)
+print(b, "<=", a, "is", b <= a)
+
+c.	Create a python program to enter three numbers and then performs and displays the results of the following Logical operations: and, or, not.
+
+Algorithm:
+1.Start.
+2.Get the input from the user.
+3.Perform the logical operations on the inputs.
+4.Print the results.
+5.Stop.
+
+Program:
+# Taking three numbers as input
+a = int(input("Enter the First number: "))
+b = int(input("Enter the Second number: "))
+c = int(input("Enter the Third number: "))
+
+# Performing logical operations
+print("\nLogical Operations Results:")
+print((a > b) and (b > c))
+print((a > b) or (b > c))
+print(not(a > b))
+print(not(b > c))
+
+Output
+
+
+ 
+
+
+
+
+Result
+      Thus, the python program to run Python Script and various expressions in an interactive interpreter was don successfully and the output was verified.
